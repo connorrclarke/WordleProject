@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="400.0" spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <AnchorPane prefHeight="500.0" prefWidth="414.0">
+      <children>
+         <GridPane layoutX="4.0" layoutY="58.0" prefWidth="450.0">
+           <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                  <children>
+                  
+                      <Label layoutX="108.0" layoutY="6.0" text="1. Each guess must be a valid 5-letter word." textAlignment="CENTER" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                  <children>
+                      <Label layoutX="112.0" layoutY="6.0" text="2. The letters can be repeated in the word." textAlignment="CENTER" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                  <children>
+                      <Label layoutX="4.0" layoutY="8.0" prefHeight="17.0" prefWidth="442.0" text="3. The color of the tiles will change to show how close your guess was to the word." textAlignment="CENTER" wrapText="true" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                  <children>
+                      <Label layoutX="43.0" layoutY="7.0" text="   - Green background indicates correct letter in the correct position." textAlignment="CENTER" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+                  <children>
+                      <Label layoutX="44.0" layoutY="6.0" text="   - Yellow background indicates correct letter in the wrong position." textAlignment="CENTER" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5">
+                  <children>
+                     <Label layoutX="101.0" layoutY="8.0" text="   - Grey background indicates incorrect letter. " textAlignment="CENTER" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6">
+                  <children>
+                      <Label layoutX="73.0" layoutY="8.0" text="5. You win the game when you guess the word correctly." textAlignment="CENTER" />
+                  </children>
+               </AnchorPane>
+            </children>
+         </GridPane>
+      
+                <Label layoutX="160.0" layoutY="7.0" style="-fx-font-size: 18pt; -fx-font-weight: bold;" text="Wordle Rules" textAlignment="CENTER" />
+      </children>
+   </AnchorPane>
+
+</VBox>
